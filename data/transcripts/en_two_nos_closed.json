@@ -1,0 +1,44 @@
+{
+  "id": "en_two_nos_closed",
+  "language": "en",
+  "note": "Closes right after the second no.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Good afternoon, this is Sophie from North Studio. Is this the doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm calling about a short advisory session. Interested?"
+    },
+    {
+      "speaker": "user",
+      "text": "No thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Understood. It's only twenty minutes, would that change anything?"
+    },
+    {
+      "speaker": "user",
+      "text": "No, thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course. Thank you for your time, goodbye."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "end_call",
+      "turn": 6
+    }
+  ],
+  "expect": {
+    "flags": []
+  }
+}

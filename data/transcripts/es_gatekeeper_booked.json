@@ -1,0 +1,47 @@
+{
+  "id": "es_gatekeeper_booked",
+  "language": "es",
+  "note": "Booked with the assistant, not the target (also a pitch plus a booking turn).",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, ¿hablo con el doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Soy la asistente, ¿de qué se trata?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Le habla Sofía de Estudio Norte, ofrecemos una sesión corta de asesoría financiera."
+    },
+    {
+      "speaker": "user",
+      "text": "Ah, está bien, anote el jueves a las 4."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfecto, quedó agendada para el jueves a las 4."
+    },
+    {
+      "speaker": "user",
+      "text": "Gracias."
+    },
+    {
+      "speaker": "agent",
+      "text": "Gracias, hasta luego."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "book_slot",
+      "turn": 4
+    }
+  ],
+  "expect": {
+    "flags": [
+      "gatekeeper_booking",
+      "gatekeeper_chat"
+    ]
+  }
+}

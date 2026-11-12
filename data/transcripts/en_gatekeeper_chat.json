@@ -1,0 +1,41 @@
+{
+  "id": "en_gatekeeper_chat",
+  "language": "en",
+  "note": "Pitching to the receptionist.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Hello, may I speak with the doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "I'm the receptionist, he's not available. Can I take a message?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Sure. I'm Sophie from North Studio. When is he usually free?"
+    },
+    {
+      "speaker": "user",
+      "text": "Mornings, mostly."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. Let me tell you about our advisory sessions, they take twenty minutes."
+    },
+    {
+      "speaker": "user",
+      "text": "Okay."
+    },
+    {
+      "speaker": "agent",
+      "text": "They're free and over video. Do you think he would like one?"
+    }
+  ],
+  "tool_calls": [],
+  "expect": {
+    "flags": [
+      "gatekeeper_chat"
+    ]
+  }
+}

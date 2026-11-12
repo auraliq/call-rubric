@@ -1,0 +1,44 @@
+{
+  "id": "es_hedge_then_yes",
+  "language": "es",
+  "note": "A hedge followed by a real yes is fine.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, le habla Sofía de Estudio Norte, ¿hablo con el doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, soy yo."
+    },
+    {
+      "speaker": "agent",
+      "text": "Le llamo para una sesión corta de asesoría, veinte minutos. ¿Le interesa?"
+    },
+    {
+      "speaker": "user",
+      "text": "No sé, estoy ocupado."
+    },
+    {
+      "speaker": "agent",
+      "text": "Lo entiendo, son solo veinte minutos y podemos elegir un horario tranquilo. ¿Le parece?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, está bien, el jueves a las 5."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfecto, quedó agendada para el jueves a las 5. Hasta luego."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "book_slot",
+      "turn": 6
+    }
+  ],
+  "expect": {
+    "flags": []
+  }
+}

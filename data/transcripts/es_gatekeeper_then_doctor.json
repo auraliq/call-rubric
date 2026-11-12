@@ -1,0 +1,48 @@
+{
+  "id": "es_gatekeeper_then_doctor",
+  "language": "es",
+  "note": "Booking happens after the doctor takes the phone.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, ¿hablo con el doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Soy la asistente, ¿de parte de quién?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Sofía, de Estudio Norte. Si gusta, vuelvo a llamar. Hasta luego."
+    },
+    {
+      "speaker": "user",
+      "text": "Espere, ya se lo paso."
+    },
+    {
+      "speaker": "user",
+      "text": "Habla el doctor, dígame."
+    },
+    {
+      "speaker": "agent",
+      "text": "Doctor, le llamo para una sesión corta de asesoría, veinte minutos. ¿Le interesa?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, de acuerdo, el miércoles a las 3."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfecto, quedó agendada el miércoles a las 3. Gracias por su tiempo."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "book_slot",
+      "turn": 7
+    }
+  ],
+  "expect": {
+    "flags": []
+  }
+}

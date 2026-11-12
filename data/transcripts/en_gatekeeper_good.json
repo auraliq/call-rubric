@@ -1,0 +1,28 @@
+{
+  "id": "en_gatekeeper_good",
+  "language": "en",
+  "note": "One turn and out.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Good afternoon, may I speak with the doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "I'm his assistant, he's with a patient. Who's calling?"
+    },
+    {
+      "speaker": "agent",
+      "text": "This is Sophie from North Studio. Thank you for your time, goodbye."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "end_call",
+      "turn": 2
+    }
+  ],
+  "expect": {
+    "flags": []
+  }
+}

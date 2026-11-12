@@ -1,0 +1,26 @@
+{
+  "id": "es_booking_without_user_reply",
+  "language": "es",
+  "note": "Booking with no user turn at all.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, le habla Sofía de Estudio Norte."
+    },
+    {
+      "speaker": "agent",
+      "text": "Quedó agendada una sesión para el jueves a las 4."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "book_slot",
+      "turn": 1
+    }
+  ],
+  "expect": {
+    "flags": [
+      "forced_booking"
+    ]
+  }
+}

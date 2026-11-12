@@ -1,0 +1,44 @@
+{
+  "id": "en_clean_booking",
+  "language": "en",
+  "note": "Clear yes, booking.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Good afternoon, this is Sophie from North Studio. Am I speaking with the doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Speaking."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm calling about a short financial advisory session, twenty minutes over video. Would that interest you?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sure, that sounds good."
+    },
+    {
+      "speaker": "agent",
+      "text": "Does Thursday at 4 or Friday at 10 work better?"
+    },
+    {
+      "speaker": "user",
+      "text": "Thursday at 4 works."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done, you're booked for Thursday at 4. Have a great day."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "book_slot",
+      "turn": 6
+    }
+  ],
+  "expect": {
+    "flags": []
+  }
+}

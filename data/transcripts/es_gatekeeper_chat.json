@@ -1,0 +1,49 @@
+{
+  "id": "es_gatekeeper_chat",
+  "language": "es",
+  "note": "Agent keeps chatting with the receptionist.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, ¿hablo con el doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Soy la secretaria, el doctor no está. ¿De parte de quién?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Le habla Sofía de Estudio Norte, ¿me podría decir cuándo lo encuentro?"
+    },
+    {
+      "speaker": "user",
+      "text": "Tiene consulta toda la tarde."
+    },
+    {
+      "speaker": "agent",
+      "text": "Entiendo. Le cuento rápido de qué se trata: ofrecemos sesiones de asesoría financiera."
+    },
+    {
+      "speaker": "user",
+      "text": "Ajá."
+    },
+    {
+      "speaker": "agent",
+      "text": "Son veinte minutos por videollamada y no tienen costo. ¿Cree que le interese al doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "No sé, tendría que preguntarle."
+    },
+    {
+      "speaker": "agent",
+      "text": "¿Y usted podría decirme cuál es su horario libre?"
+    }
+  ],
+  "tool_calls": [],
+  "expect": {
+    "flags": [
+      "gatekeeper_chat"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "es_many_cuts",
+  "language": "es",
+  "note": "Three barge-ins, all handled, but worth a look.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, le habla Sofía de Estudio Norte, ¿hablo con el doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, ¿quién?",
+      "barge_in": true
+    },
+    {
+      "speaker": "agent",
+      "text": "Sofía, de Estudio Norte."
+    },
+    {
+      "speaker": "user",
+      "text": "¿De dónde?",
+      "barge_in": true
+    },
+    {
+      "speaker": "agent",
+      "text": "Estudio Norte, asesoría financiera."
+    },
+    {
+      "speaker": "user",
+      "text": "¿Y qué quiere?",
+      "barge_in": true
+    },
+    {
+      "speaker": "agent",
+      "text": "Ofrecerle una sesión de veinte minutos. ¿Le interesa?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, el jueves a las 4."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfecto, quedó agendada el jueves a las 4. Hasta luego."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "book_slot",
+      "turn": 8
+    }
+  ],
+  "expect": {
+    "flags": [
+      "many_cuts"
+    ]
+  }
+}

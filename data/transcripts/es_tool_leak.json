@@ -1,0 +1,33 @@
+{
+  "id": "es_tool_leak",
+  "language": "es",
+  "note": "Reads a call out loud.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, le habla Sofía de Estudio Norte, ¿hablo con el doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, dígame."
+    },
+    {
+      "speaker": "agent",
+      "text": "Gracias, un segundo. end_call{}"
+    },
+    {
+      "speaker": "user",
+      "text": "¿Perdón?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Disculpe, le decía que le llamo para una sesión de asesoría."
+    }
+  ],
+  "tool_calls": [],
+  "expect": {
+    "flags": [
+      "tool_syntax_aloud"
+    ]
+  }
+}

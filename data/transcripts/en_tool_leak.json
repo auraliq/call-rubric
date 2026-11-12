@@ -1,0 +1,33 @@
+{
+  "id": "en_tool_leak",
+  "language": "en",
+  "note": "Reads an ISO timestamp and a tool name.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Good afternoon, this is Sophie from North Studio."
+    },
+    {
+      "speaker": "user",
+      "text": "Hello?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Let me check. field2026-11-09T16:00:00 check_slots"
+    },
+    {
+      "speaker": "user",
+      "text": "What did you just say?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Sorry, I have Thursday at 4 available."
+    }
+  ],
+  "tool_calls": [],
+  "expect": {
+    "flags": [
+      "tool_syntax_aloud"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "gatekeeper_max_pitch_turns": 1,
+  "forced_booking_lookback_user_turns": 2,
+  "max_words_after_barge_in": 30,
+  "repeat_similarity": 0.6,
+  "overlap_ms_limit": 1500,
+  "many_cuts_threshold": 3,
+  "nos_to_close": 2,
+  "max_pitch_turns_after_nos": 0,
+  "weights": {
+    "gatekeeper": 1.0,
+    "forced_booking": 2.0,
+    "interruption": 1.0,
+    "close_after_nos": 1.5,
+    "tool_syntax": 2.0
+  },
+  "critical_flags": ["forced_booking", "gatekeeper_booking", "no_close_after_two_nos", "tool_syntax_aloud"],
+  "min_overall": 0.7
+}

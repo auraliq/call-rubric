@@ -1,0 +1,26 @@
+{
+  "id": "en_ignored_interruption",
+  "language": "en",
+  "note": "Same text again.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Good afternoon, this is Sophie from North Studio, calling to offer you a short financial advisory session over video, twenty minutes, free of charge and with no commitment of any kind."
+    },
+    {
+      "speaker": "user",
+      "text": "Sorry, who is this?",
+      "barge_in": true
+    },
+    {
+      "speaker": "agent",
+      "text": "Good afternoon, this is Sophie from North Studio, calling to offer you a short financial advisory session over video, twenty minutes, free of charge and with no commitment of any kind."
+    }
+  ],
+  "tool_calls": [],
+  "expect": {
+    "flags": [
+      "ignored_interruption"
+    ]
+  }
+}

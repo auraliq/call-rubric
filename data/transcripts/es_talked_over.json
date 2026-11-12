@@ -1,0 +1,35 @@
+{
+  "id": "es_talked_over",
+  "language": "es",
+  "note": "Agent kept talking over the user for 2.6 s.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, le habla Sofía de Estudio Norte, ¿hablo con el doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, pero ahorita no puedo atender."
+    },
+    {
+      "speaker": "agent",
+      "text": "Solo será un momento, le comento que ofrecemos sesiones de asesoría.",
+      "overlap_ms": 2600
+    },
+    {
+      "speaker": "user",
+      "text": "Le dije que no puedo, gracias.",
+      "barge_in": true
+    },
+    {
+      "speaker": "agent",
+      "text": "Entiendo, perdone. Hasta luego."
+    }
+  ],
+  "tool_calls": [],
+  "expect": {
+    "flags": [
+      "talked_over"
+    ]
+  }
+}

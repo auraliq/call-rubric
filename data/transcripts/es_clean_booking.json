@@ -1,0 +1,44 @@
+{
+  "id": "es_clean_booking",
+  "language": "es",
+  "note": "Clear yes, slot chosen, booking, closing.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, le habla Sofía de Estudio Norte. ¿Hablo con el doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, dígame."
+    },
+    {
+      "speaker": "agent",
+      "text": "Le llamo para ofrecerle una sesión corta de asesoría financiera, veinte minutos por videollamada. ¿Le interesaría?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, claro, suena bien."
+    },
+    {
+      "speaker": "agent",
+      "text": "¿Le queda mejor el jueves a las 4 o el viernes a las 10?"
+    },
+    {
+      "speaker": "user",
+      "text": "El jueves a las 4."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfecto, quedó agendada para el jueves a las 4. Gracias, hasta luego."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "book_slot",
+      "turn": 6
+    }
+  ],
+  "expect": {
+    "flags": []
+  }
+}

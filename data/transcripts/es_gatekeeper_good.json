@@ -1,0 +1,28 @@
+{
+  "id": "es_gatekeeper_good",
+  "language": "es",
+  "note": "Name and firm in one turn, then closes.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, ¿hablo con el doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Soy la asistente, el doctor está en consulta. ¿De parte de quién?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Le habla Sofía de Estudio Norte. Gracias, hasta luego."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "end_call",
+      "turn": 2
+    }
+  ],
+  "expect": {
+    "flags": []
+  }
+}

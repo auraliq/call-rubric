@@ -1,0 +1,45 @@
+{
+  "id": "es_good_interruption",
+  "language": "es",
+  "note": "Short, relevant answer after the barge-in.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, le habla Sofía de Estudio Norte. Le llamo para ofrecerle una sesión corta de asesoría financiera por videollamada, veinte minutos."
+    },
+    {
+      "speaker": "user",
+      "text": "Perdón, ¿de dónde me dice?",
+      "barge_in": true
+    },
+    {
+      "speaker": "agent",
+      "text": "De Estudio Norte, una firma de asesoría. ¿Tiene un minuto?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, dígame."
+    },
+    {
+      "speaker": "agent",
+      "text": "Es una sesión de veinte minutos. ¿Le interesa?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, claro, el jueves a las 4."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfecto, quedó agendada el jueves a las 4. Hasta luego."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "book_slot",
+      "turn": 6
+    }
+  ],
+  "expect": {
+    "flags": []
+  }
+}

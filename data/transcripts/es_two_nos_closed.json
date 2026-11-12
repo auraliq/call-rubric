@@ -1,0 +1,44 @@
+{
+  "id": "es_two_nos_closed",
+  "language": "es",
+  "note": "Two refusals, then a polite close.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, le habla Sofía de Estudio Norte, ¿hablo con el doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí, dígame."
+    },
+    {
+      "speaker": "agent",
+      "text": "Le llamo para una sesión corta de asesoría. ¿Le interesa?"
+    },
+    {
+      "speaker": "user",
+      "text": "No, gracias."
+    },
+    {
+      "speaker": "agent",
+      "text": "Entiendo. Solo son veinte minutos y sin costo, ¿le parece?"
+    },
+    {
+      "speaker": "user",
+      "text": "No me interesa, de verdad."
+    },
+    {
+      "speaker": "agent",
+      "text": "Entendido, gracias por su tiempo. Hasta luego."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "end_call",
+      "turn": 6
+    }
+  ],
+  "expect": {
+    "flags": []
+  }
+}

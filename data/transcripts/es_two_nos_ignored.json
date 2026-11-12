@@ -1,0 +1,49 @@
+{
+  "id": "es_two_nos_ignored",
+  "language": "es",
+  "note": "Keeps pitching after two clear no's.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, le habla Sofía de Estudio Norte, ¿hablo con el doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí."
+    },
+    {
+      "speaker": "agent",
+      "text": "Le llamo para una sesión corta de asesoría. ¿Le interesa?"
+    },
+    {
+      "speaker": "user",
+      "text": "No, gracias."
+    },
+    {
+      "speaker": "agent",
+      "text": "Entiendo, solo son veinte minutos. ¿Le parece?"
+    },
+    {
+      "speaker": "user",
+      "text": "No me interesa."
+    },
+    {
+      "speaker": "agent",
+      "text": "Muchos colegas lo han tomado y les ha servido bastante. ¿Y si lo vemos el viernes?"
+    },
+    {
+      "speaker": "user",
+      "text": "Que no, gracias."
+    },
+    {
+      "speaker": "agent",
+      "text": "¿Qué le preocupa exactamente?"
+    }
+  ],
+  "tool_calls": [],
+  "expect": {
+    "flags": [
+      "no_close_after_two_nos"
+    ]
+  }
+}

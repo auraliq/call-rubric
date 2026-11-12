@@ -1,0 +1,38 @@
+{
+  "id": "en_forced_booking",
+  "language": "en",
+  "note": "Booking on a maybe.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Good afternoon, this is Sophie from North Studio. Is this the doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm calling about a short advisory session. Would you be interested?"
+    },
+    {
+      "speaker": "user",
+      "text": "Hmm, I'm busy right now, maybe."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great, I've put you down for Thursday at 4. You're booked, goodbye."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "book_slot",
+      "turn": 4
+    }
+  ],
+  "expect": {
+    "flags": [
+      "forced_booking"
+    ]
+  }
+}

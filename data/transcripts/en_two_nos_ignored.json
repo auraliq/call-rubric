@@ -1,0 +1,41 @@
+{
+  "id": "en_two_nos_ignored",
+  "language": "en",
+  "note": "Third pitch after two refusals.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Good afternoon, this is Sophie from North Studio. Is this the doctor?"
+    },
+    {
+      "speaker": "user",
+      "text": "Yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm calling about a short advisory session. Interested?"
+    },
+    {
+      "speaker": "user",
+      "text": "No thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's only twenty minutes and free."
+    },
+    {
+      "speaker": "user",
+      "text": "Not interested."
+    },
+    {
+      "speaker": "agent",
+      "text": "Many colleagues found it useful. How about Friday?"
+    }
+  ],
+  "tool_calls": [],
+  "expect": {
+    "flags": [
+      "no_close_after_two_nos"
+    ]
+  }
+}

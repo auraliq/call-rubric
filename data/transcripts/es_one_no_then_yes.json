@@ -1,0 +1,44 @@
+{
+  "id": "es_one_no_then_yes",
+  "language": "es",
+  "note": "One refusal then a clear yes: not a violation.",
+  "turns": [
+    {
+      "speaker": "agent",
+      "text": "Buenas tardes, le habla Sofía de Estudio Norte, ¿hablo con la doctora?"
+    },
+    {
+      "speaker": "user",
+      "text": "Sí."
+    },
+    {
+      "speaker": "agent",
+      "text": "Le llamo para una sesión corta de asesoría. ¿Le interesaría?"
+    },
+    {
+      "speaker": "user",
+      "text": "No, gracias."
+    },
+    {
+      "speaker": "agent",
+      "text": "Entiendo. Solo para que lo sepa, es sin costo y de veinte minutos. ¿Se la agendo?"
+    },
+    {
+      "speaker": "user",
+      "text": "Ah, bueno, de acuerdo, el viernes a las 10."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfecto, quedó agendada el viernes a las 10. Gracias por su tiempo."
+    }
+  ],
+  "tool_calls": [
+    {
+      "name": "book_slot",
+      "turn": 6
+    }
+  ],
+  "expect": {
+    "flags": []
+  }
+}
